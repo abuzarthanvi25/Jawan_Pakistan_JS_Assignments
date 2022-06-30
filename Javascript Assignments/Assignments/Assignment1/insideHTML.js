@@ -1,0 +1,1 @@
+alert("This script was placed inside HTML")

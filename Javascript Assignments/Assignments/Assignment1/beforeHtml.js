@@ -1,0 +1,1 @@
+alert("This script was placed before HTML")
