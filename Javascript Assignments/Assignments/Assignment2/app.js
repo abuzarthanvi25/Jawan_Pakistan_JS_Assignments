@@ -21,8 +21,8 @@ alert(studentAge);
 alert(certification);
 
 // 5. Write a script to display the following alert using one JS variable:
-var pizza = "PIZZA\nPIZZ\nPIZ\nPI\nP";
-alert(pizza);
+var pizza = "PIZZA";
+alert(pizza + "\n" + pizza.slice(0,4) + "\n" + pizza.slice(0,3) + "\n" + pizza.slice(0,2) + "\n" + pizza.slice(0,1));
 
 // 6. Declare a variable called email and assign to it a string that
 // represents your Email Address(e.g. example@example.com).
