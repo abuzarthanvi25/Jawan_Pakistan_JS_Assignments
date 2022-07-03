@@ -161,3 +161,77 @@ document.write("Remarks: " + remarks + "<br>");
 // answer”.
 // b. If the guessed number +1 is the secret number, show
 // “Close enough to the correct answer”.
+var secretNumber = 2;
+var userGuess = parseInt(prompt("Enter your guess number: "));
+if(userGuess === secretNumber){
+    alert("Bingo! Correct answer")
+}
+else if(userGuess+1 === secretNumber){
+    alert("Close enough to the correct answer");
+}
+
+// 8. Write a program to check whether the given number is
+// divisible by 3. Show the message to the user if the number
+// is divisible by 3.
+var userInp = parseInt(prompt("Enter your number: "));
+if( userInp%3 === 0 ){
+    alert("Your number is divisible by 3");
+}
+else{
+    alert("Your number is not divisible by 3");
+}
+
+// 9. Write a program that checks whether the given input is an
+// even number or an odd number.
+var userNumber = parseInt(prompt("Enter your number: "))
+if(userNumber%2 === 0 ){
+    alert("Even Number");
+}
+else{
+    alert("Odd Number");
+}
+
+// 10. Write a program that takes temperature as input and
+// shows a message based on following criteria
+// a. T > 40 then “It is too hot outside.”
+// b. T > 30 then “The Weather today is Normal.”
+// c. T > 20 then “Today’s Weather is cool.”
+// d. T > 10 then “OMG! Today’s weather is so Cool.”
+var inpTemp = parseInt(prompt("Enter the temperature outside today: "));
+if(inpTemp>40){
+    alert("It is too hot outside today");
+}
+else if(inpTemp>30){
+    alert("The weather today is normal");
+}
+else if(inpTemp>20){
+    alert("Today's weather is cool");
+}
+else if(inpTemp>10){
+    alert("OMG! Today's weather is so cool");
+}
+
+// 11. Write a program to create a calculator for +,-,*, / & %
+// using if statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %)
+// Compute & show the calculated result to user.
+var firstNum = parseInt(prompt("Enter the first number: "));
+var secondNum = parseInt(prompt("Enter the second number: "));
+var operation = prompt("Enter the desired operation (+, -, *, /< %): ");
+if(operation === "+"){
+    alert("The sum of the two numbers (a+b) is: " + (firstNum+secretNumber));
+}
+else if(operation === "-"){
+    alert("The minus of the two mumbers (a-b) is: " + (firstNum - secretNumber));
+}
+else if(operation === "*"){
+    alert("The product of the two numbers (a*b) is: " + (firstNum * secondNum));
+}
+else if(operation === "/"){
+    alert("The division of the two numbers (a/b) is: " + (firstNum / secondNum));
+}
+else if(operation === "%"){
+    alert("The remainder of the two numbers (a%2) is: " + (firstNum % secondNum));
+}
