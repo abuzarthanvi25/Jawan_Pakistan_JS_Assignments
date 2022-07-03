@@ -135,4 +135,99 @@ var percentage = (marksObtained/totalMarks) * 100;
 
 document.write("Total Marks: " + totalMarks);
 document.write("Marks Obtained: " + marksObtained);
-document.write("Percentage: " + percentage + "%");
+document.write("Percentage: " + percentage + "%" + "<br><br>");
+
+// 9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+// script to convert the total currency to Pakistani Rupees.
+// Perform all calculations in a single expression.
+// (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee
+// and 1 Saudi Riyal = 28 Pakistani Rupee)
+const h1Currency = document.createElement("h1");
+h1Currency.textContent = "Currency in PKR \n";
+document.body.append(h1Currency);
+
+var USD = 10;
+var saudiRiyal = 25;
+var totalCurrency = (USD*104.80) + (saudiRiyal*28);
+document.write("Total Currency in PKR: " + totalCurrency + "<br><br>");
+
+// 10. Write a program to initialize a variable with some
+// number and do arithmetic in following sequence:
+// a. Add 5
+// b. Multiply by 10
+// c. Divide the result by 2
+// Perform all calculations in a single expression
+const h1exp = document.createElement("h1");
+h1exp.textContent = "1 Expression Calculations \n";
+document.body.append(h1exp);
+
+var mathNum = 2;
+var calculation = (((mathNum+5) *10)/2);
+document.write("Calculations in single expressions result: " + calculation);
+
+// 11. The Age Calculator: Forgot how old someone is?
+// Calculate it!
+// a. Store the current year in a variable.
+// b. Store their birth year in a variable.
+// c. Calculate their 2 possible ages based on the stored
+// values.
+// Output them to the screen like so: “They are either NN or NN
+// years old”.
+const h1AgeCalculator = document.createElement("h1");
+h1AgeCalculator.textContent = "Age Calculator \n";
+document.body.append(h1AgeCalculator);
+
+var currentYear = 2016;
+var birthYear = 1992;
+var AgeCal = currentYear - birthYear;
+document.write("Current Year: " + currentYear + "<br>");
+document.write("Birth Year: " + birthYear + "<br>");
+document.write("Your Age is: " + AgeCal + "<br>");
+
+// 12. The Geometrizer: Calculate properties of a circle.
+// a. Store a radius into a variable.
+// MATH EXPRESSIONS | JAVASCRIPT
+// Page 8 of 9
+// b. Calculate the circumference based on the radius, and
+// output “The circumference is NN”.
+// (Hint : Circumference of a circle = 2 π r , π = 3.142)
+// Calculate the area based on the radius, and output “The
+// area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
+const h1Geometrizer = document.createElement("h1");
+h1Geometrizer.textContent = "Geometrizer \n";
+document.body.append(h1Geometrizer);
+
+var radius = 20;
+var circumference = 2 * Math.PI * radius;
+var area = Math.PI * (radius ** 2);
+document.write("Radius of a cirle is: " + radius + "<br>")
+document.write("The circumference is: " + circumference + "<br>")
+document.write("The area is: " + area + "<br><br>");
+
+// 13. The Lifetime Supply Calculator: Ever wonder how
+// much a “lifetime supply” of your favorite snack is?
+// Wonder no more.
+// a. Store your favorite snack into a variable
+// b. Store your current age into a variable.
+// c. Store a maximum age into a variable.
+// d. Store an estimated amount per day (as a number).
+// e. Calculate how many would you eat total for the rest of
+// your life.
+// Output the result to the screen like so: “You will need
+// NNNN to last you until the ripe old age of NN”.
+const h1LifetimeSuppy = document.createElement("h1");
+h1LifetimeSuppy.textContent = "The Lifetime Suppy Calculator \n";
+document.body.append(h1LifetimeSuppy);
+
+var favSnack = "chocolate chip";
+var currAge = 15;
+var estmMaxAge = 65;
+var snacksPerDay = 3;
+var leftTime = estmMaxAge - currAge;
+var total = (leftTime*365) * snacksPerDay;
+
+document.write("Favourite Snack: " + favSnack + "<br>");
+document.write("Current Age: " + currAge + "<br>");
+document.write("Estimated Maximum Age: " + estmMaxAge + "<br>")
+document.write("Amount of snacks per day: " + snacksPerDay + "<br>");
+document.write("You will need " + total + " chocolate chips to last you until the ripe old age of " + estmMaxAge + "<br><br>");
