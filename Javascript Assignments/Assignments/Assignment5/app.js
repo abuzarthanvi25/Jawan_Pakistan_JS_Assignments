@@ -50,3 +50,15 @@ document.body.append(h1Modulus);
 // k. Show the remainder after dividing the variable’s value
 // by 3.
 // l. Output : “The remainder is : 0”.
+var value;
+document.write("Value after variable declaration is: " + value + "<br>");
+value = 5;
+document.write("Initial value: " + value + "<br>");
+++value;
+document.write("Value after increment is: " + value + "<br>");
+value += 7;
+document.write("Value after addition is: " + value + "<br>");
+--value;
+document.write("Value after decrement is: " + value + "<br>");
+value = value%3;
+document.write("The remainder is: " + value + "<br>");
