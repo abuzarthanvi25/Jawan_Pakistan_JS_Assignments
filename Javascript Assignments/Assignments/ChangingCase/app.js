@@ -132,3 +132,68 @@ document.write("<b>Q2(d). </b>The ceil value of the input is : " + Math.ceil(use
 // -------------------------
 // 1. Write a program that simulates a dice using random() method of JS
 // Math class. Display the value of dice in your browser.
+document.write("<h2>Generating random numbers</h2> <br>");
+var dice = parseFloat(Math.ceil(Math.random()*6));
+document.write("<b>Q1. </b>The random dice generated: " + dice + "<br><br>");
+
+// 2. Write a program that simulates a coin toss using random() method
+// of JS Math class. Display the value of coin in your browser.
+// 2 = Heads and 1 = Tails
+var coin = parseFloat(Math.ceil(Math.random()*2));
+if(coin === 2){
+    document.write("<b>Q2. </b>Heads<br><br>")
+}
+else if(coin === 1){
+    document.write("<b>Q2. </b>Tails<br><br>")
+}
+
+// 3. Write a program that stores a random secret number from 1 to 10 in a
+// variable. Ask the user to input a number between 1 and 10. If the user input
+// equals the secret number, congratulate the user.
+var randomSecretNumber = Math.ceil(Math.random()*10);
+var userInp9 = parseInt(prompt("Enter a number to guess the secret number: "));
+if(userInp9 === randomSecretNumber){
+    alert("Congratulations! You guessed the secret number correctly!");
+}
+
+// Converting strings to integers and decimals
+// -------------------------------------------
+// 1. Write a program that asks the user about his weight. Parse the user
+// input and display his weight in your browser.
+// Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kgs
+// d. 50.2kilograms
+document.write("<h2>Converting strings to integers and decimals</h2> <br>");
+var userInp10 = parseFloat(prompt("Enter the weight: "));
+document.write("<b>Q1. </b>The weight is : " + userInp10 + "<br><br>");
+
+// Converting strings to numbers, numbers to strings
+// -------------------------------------------------
+// 1. Write a program that converts a string “472” to a number 472.
+// Display the values & types in your browser.
+// Hint: (use typeof())
+document.write("<h2>Converting strings to numbers, numbers to strings</h2> <br>");
+var userInp11 = prompt("Enter a number BUT as a string: ");
+document.write("<b>Q1. </b>The Unconverted input is : "+ userInp11 + " and its Datatype is: " + typeof userInp11 + "<br>");
+var convertedToInt = parseInt(userInp11);
+document.write("The input converted to Integer is: " + convertedToInt + " and its Datatype is " + typeof convertedToInt + "<br><br>");
+
+// 2. Write a program that converts the variable num to string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
+var num = parseInt(prompt("Enter a number: "));
+document.write("<b>Q2. </b>The Unconverted input is : "+ num + " and its Datatype is: " + typeof num + "<br>");
+var convertedToString = num.toString();
+document.write("The input converted to String is: " + convertedToString + " and its Datatype is " + typeof convertedToString + "<br><br>");
+
+// Controlling the length of decimals
+// ----------------------------------
+// 1. Write a program to control the length of decimals to 2.
+// var percentage = 30 / 45 * 100; -> 66.66666666666666
+document.write("<h2>Controlling the length of decimals</h2> <br>");
+var percentage = (30 / 45) * 100;
+document.write("<b>Q1. </b>Current Output: " + percentage+ "<br>");
+var fixedDecimals = percentage.toFixed(2);
+document.write("The Changed output to 2 decimal places:  " + fixedDecimals);
